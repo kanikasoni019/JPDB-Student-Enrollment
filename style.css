@@ -1,0 +1,37 @@
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+.container{
+    width:450px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+}
+
+input{
+    width:100%;
+    padding:8px;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    margin-right:10px;
+}
+
+h2{
+    text-align:center;
+}
+
+.btns{
+    text-align:center;
+}
