@@ -22,4 +22,3 @@ Primary Key : Roll-No
 - CSS
 - JavaScript
 - JsonPowerDB
-
