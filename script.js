@@ -143,5 +143,4 @@ function updateData(){
     alert("Updated Successfully");
 
     resetForm();
-
 }
