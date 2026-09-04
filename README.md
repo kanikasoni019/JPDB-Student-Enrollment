@@ -2,15 +2,16 @@
 
 ## Description
 
-A web-based Student Enrollment Form developed using **HTML, CSS, JavaScript, jQuery, and JsonPowerDB (JPDB)**. The application performs CRUD operations for managing student records with client-side validation.
+A web-based Student Enrollment Form developed using **HTML, CSS, JavaScript, jQuery, and JsonPowerDB (JPDB)**. The application allows users to search, save, and update student records with form validation and field state management.
 
 ## Features
 
 * **Search:** Fetch student details using Roll Number.
 * **Save:** Add new student records to JPDB.
 * **Update:** Modify existing student information.
-* **Reset:** Clear the form fields.
-* **Validation:** Prevent submission of empty required fields.
+* **Reset:** Clear the form and restore the default state.
+* **Validation:** Check required fields before saving or updating.
+* **Field Control:** Enable and disable form fields based on the operation.
 
 ## Technical Specifications
 
@@ -28,10 +29,10 @@ A web-based Student Enrollment Form developed using **HTML, CSS, JavaScript, jQu
 ## How to Run
 
 1. Clone the repository.
-2. Configure the JsonPowerDB Connection Token in the JavaScript file.
+2. Configure the JsonPowerDB Connection Token in `script.js`.
 3. Open `index.html` in a modern web browser.
 4. Use the form to search, save, update, or reset student records.
 
 ## Project Objective
 
-To implement a simple and efficient student record management system while gaining practical experience with **JsonPowerDB, REST-based database operations, form validation, and frontend development**.
+To build a simple student record management system while gaining practical experience with **JsonPowerDB, AJAX-based database operations, form validation, and interactive web forms**.
