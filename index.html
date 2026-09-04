@@ -1,49 +1,119 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
     <title>Student Enrollment Form</title>
 
-    <link rel="stylesheet" href="style.css">
+```
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="http://login2explore.com/jpdb/resources/js/0.0.8/jpdb-commons.js"></script>
+```
+
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container" style="max-width: 600px; margin-top: 30px;">
 
-        <h2>Student Enrollment Form</h2>
+```
+<h2 class="text-center">Student Enrollment Form</h2>
 
-        <label for="roll">Roll No</label>
-        <input type="text" id="roll" placeholder="Enter Roll No">
+<form id="studentForm">
 
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter Full Name">
+    <div class="form-group">
+        <label for="roll">Roll No:</label>
+        <input type="text"
+               class="form-control"
+               id="roll"
+               placeholder="Enter Roll Number">
+    </div>
 
-        <label for="class">Class</label>
-        <input type="text" id="class" placeholder="Enter Class">
+    <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text"
+               class="form-control"
+               id="name"
+               placeholder="Enter Full Name"
+               disabled>
+    </div>
 
-        <label for="birth">Birth Date</label>
-        <input type="date" id="birth">
+    <div class="form-group">
+        <label for="class">Class:</label>
+        <input type="text"
+               class="form-control"
+               id="class"
+               placeholder="Enter Class"
+               disabled>
+    </div>
 
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Enter Address">
+    <div class="form-group">
+        <label for="birth">Birth Date:</label>
+        <input type="date"
+               class="form-control"
+               id="birth"
+               disabled>
+    </div>
 
-        <label for="enroll">Enrollment Date</label>
-        <input type="date" id="enroll">
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text"
+               class="form-control"
+               id="address"
+               placeholder="Enter Address"
+               disabled>
+    </div>
 
-        <div class="btns">
-            <button id="save" onclick="saveData()">Save</button>
-            <button id="update" onclick="updateData()">Update</button>
-            <button id="reset" onclick="resetForm()">Reset</button>
-        </div>
+    <div class="form-group">
+        <label for="enroll">Enrollment Date:</label>
+        <input type="date"
+               class="form-control"
+               id="enroll"
+               disabled>
+    </div>
+
+    <div class="text-center">
+
+        <button type="button"
+                class="btn btn-primary"
+                id="save"
+                onclick="saveData()"
+                disabled>
+            Save
+        </button>
+
+        <button type="button"
+                class="btn btn-success"
+                id="update"
+                onclick="updateData()"
+                disabled>
+            Update
+        </button>
+
+        <button type="button"
+                class="btn btn-default"
+                id="reset"
+                onclick="resetForm()">
+            Reset
+        </button>
 
     </div>
 
-    <script src="script.js"></script>
+</form>
+```
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
